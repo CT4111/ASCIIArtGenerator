@@ -50,11 +50,6 @@ class ASCIIArt:
         pixels = image.getdata()
         characters = "".join([self.ASCIIChar[pixel//25] for pixel in pixels])
         return(characters)
-Pictures = ["D:\Applications\Python\PythonScripts\ASCIIart\TestImages\BabyYoda.jpeg",
-            "D:\Applications\Python\PythonScripts\ASCIIart\TestImages\Download.jpeg",
-            "D:\Applications\Python\PythonScripts\ASCIIart\TestImages\Download (1).jpeg",
-            "D:\Applications\Python\PythonScripts\ASCIIart\TestImages\R2-D2-PNG-Clipart.png",
-            "D:\Applications\Python\PythonScripts\ASCIIart\TestImages\images.jpeg",
-            "D:\Applications\Python\PythonScripts\ASCIIart\TestImages\Download (2).jpeg"]
+Pictures = ["picture Paths"]
 width = 25
 Art = ASCIIArt(Pictures[5],width,1,False,False)
