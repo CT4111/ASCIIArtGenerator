@@ -2,7 +2,7 @@ import PIL.Image
 from PIL import ImageEnhance,ImageOps
 
 class ASCIIArt:
-    def __init__(self,path,width,Char,contrast,negativ):
+    def __init__(self,path,width,contrast,negativ):
         #● ─ ┐ ─ └ ┘
         self.new_width = width
         ASCIIChar1 = [ "@", "#", "S", "%", "?", "*", "+", ";", ":", ",", " "]
@@ -11,10 +11,8 @@ class ASCIIArt:
         #ASCIIChar4 = ["●", "#", "S", "%", "?", "*", "+", ";", ":", ",", "."]
         #ASCIIChar4 = ["@", "@", "@", "@", "@", "@", "@",  ":", ":", ".", " "]
 
-        if Char == 1:
-            self.ASCIIChar = ASCIIChar1
-        else:
-            self.ASCIIChar = ASCIIChar2
+  
+self.ASCIIChar = ASCIIChar1
 
 
         try:
@@ -52,4 +50,4 @@ class ASCIIArt:
         return(characters)
 Pictures = ["picture Paths"]
 width = 25
-Art = ASCIIArt(Pictures[5],width,1,False,False)
+Art = ASCIIArt(Pictures[5],width,False,False)
